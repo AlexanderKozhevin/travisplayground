@@ -17,3 +17,4 @@ deploy:
     skip_cleanup: true
     local_dir: production
     acl: public_read
+    branch: staging
