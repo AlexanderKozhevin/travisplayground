@@ -7,3 +7,9 @@ install:
 before_install:
   - npm install -g gulp
 script: gulp
+
+deploy:
+  provider: s3
+  access_key_id: "AKIAJJGMP5PFICGP3PVA"
+  secret_access_key: "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"
+  bucket: "templateer"
