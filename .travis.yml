@@ -10,8 +10,13 @@ before_install:
 script: gulp
 
 deploy:
-  provider: s3
-  access_key_id: "AKIAJJGMP5PFICGP3PVA"
-  secret_access_key: "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"
-  bucket: "templateer"
-  local_dir: production
+    provider: s3
+    access_key_id: $access_key_id 
+    secret_access_key: $secret_access_key
+    bucket: templateer
+    endpoint: templateer.s3-website-us-east-1.amazonaws.com
+    region: US Standard
+    skip_cleanup: true
+    local-dir: production
+    acl: public_read
+    detect_encoding: true
